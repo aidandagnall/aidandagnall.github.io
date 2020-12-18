@@ -1,1 +1,1 @@
-{"data":{"allNav":{"nodes":[{"__typename":"MdxNav","name":"header","items":[{"type":"link","value":"Home","url":"/","items":null},{"type":"link","value":"CV","url":"/cv","items":null}],"data":{"title":"","rawBody":"- [Home](/)\n- [CV](/cv)\n\n"}}]}}}
+{"data":{"allNav":{"nodes":[{"__typename":"MdxNav","name":"header","items":[{"type":"link","value":"Home","url":"/","items":null}],"data":{"title":"","rawBody":"- [Home](/)\n<!-- - [CV](/cv) -->\n\n"}}]}}}
