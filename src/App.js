@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './App.css';
 import Home from './pages/Home';
-import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="w-full bg-bg">
-        <Home/>
-    </div>
+    <ParallaxProvider>
+      <div className="w-full bg-bg">
+          <Home/>
+      </div>
+    </ParallaxProvider>
   );
 }
 
