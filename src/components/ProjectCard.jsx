@@ -12,7 +12,7 @@ function ProjectCard(props) {
                     <div className="flex shrink-0 my-auto justify-center sm:order-last order-first">
                         <img
                             src={props.img}
-                            className={props.img_styling + " w-32 rounded-lg h-fit sm:order-last order-first mb-4"}
+                            className={props.img_styling + " h-full w-32 rounded-lg sm:order-last order-first mb-4"}
                             alt={props.title + " screenshot"}
                             />
                     </div> 

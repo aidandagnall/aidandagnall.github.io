@@ -13,8 +13,8 @@ function Home(props) {
             <div className="flex flex-col relative bg-bg">
                 <div className="relative flex flex-col sm:h-screen h-min">
 
-                    <NavBar className='z-20'/>
-                    <Parallax translateY={[-40, 40]} className='z-0 pointer-events-none'>
+                    <NavBar className='bg-bg absolute z-30 top-0 inset-x-0'/>
+                    <Parallax translateY={[-35, 40]} className='z-0 pointer-events-none'>
                         <Hero />
                     </Parallax>
                     <div className='home-wave-spacer home-wave z-30 sm:absolute sm:inset-x-0  sm:bottom-0 sm:mb-0 pointer-events-none'/>
