@@ -7,7 +7,7 @@ function Hero(props) {
     return(
         <div className="flex justify-center">
             <div className="w-4/5 flex sm:flex-row flex-col justify-evenly sm:h-screen h-min sm:space-x-24 sm:order-first order-last sm:pb-72">
-                <div className="flex flex-col justify-around self-center space-y-4 sm:ml-8 ml-8">
+                <div className="flex flex-col justify-around self-center space-y-4 sm:ml-8 ml-none">
                     <HeroTitle/>
                     <HeroSubtitle/>
                     <Socials />
