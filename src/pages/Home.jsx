@@ -21,7 +21,7 @@ function Home(props) {
                 </div>
 
             <div className='bg-local bg-gradient-to-b from-primary to-[#82ac2c] z-50'>
-                <div id="projects" className='flex flex-col pt-16 lg:w-5/6 lg:mx-auto'>
+                <div id="projects" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 lg:mx-auto'>
                     <p className='text-3xl text-bg mx-auto -mb-4'>Projects</p>
                     <ProjectCard
                         title='Android Fitness Tracker'
