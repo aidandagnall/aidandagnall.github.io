@@ -69,7 +69,7 @@ function Home(props) {
                         title='eCommerce Site with Packt'
                         description="With a team of other students, we developed a site for Packt's industry partners to easily browse their catalogue and make orders.
                         Built in Laravel to interact with their existing infrastructure, using JWTs for authentication."
-                        img='https://www.packtpub.com/media/logo/stores/1/logo.png'
+                        img='https://www.packtpub.com/images/logo-new.svg'
                         img_styling='rounded-none'
                     />
                     <ProjectCard
