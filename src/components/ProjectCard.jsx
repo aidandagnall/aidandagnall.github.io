@@ -1,6 +1,6 @@
 function ProjectCard(props) {
     return (
-        <div className="bg-bg md:mx-32 mx-12 my-8 rounded-xl p-12">
+        <div className="bg-bg md:mx-32 sm:mx-12 mx-4 my-8 rounded-xl md:p-12 p-8">
             <div className="flex flex-col justify-center">
 
                 <div className="flex sm:flex-row flex-col sm:justify-between justify-center sm:space-x-8 w-full">
