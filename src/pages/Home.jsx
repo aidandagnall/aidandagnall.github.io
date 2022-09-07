@@ -55,6 +55,7 @@ function Home(props) {
                         to submit live reports to inform others."
                         img={LabMonitorIcon}
                         img_styling='rounded-3xl'
+                        link='https://github.com/aidandagnall/lab_monitor_client'
                     />
                     <ProjectCard
                         title='Android Fitness Tracker'
