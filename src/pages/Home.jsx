@@ -27,8 +27,25 @@ function Home(props) {
                 <div id="work" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 lg:mx-auto'>
                     <p className='text-3xl text-bg mx-auto -mb-4'>Work</p>
                     <ProjectCard
-                        title="Surgecross Software"
-                        description={["Full-stack software engineer helping to create a cross-platform mobile application and accompanying back-end in a small dedicated team, currently working on ", <a className='text-primary font-semibold' href='https://gardia-app.com'>Gardia</a>, ", a platform to help gardeners keep track of their plants and share their results."]}
+                        title={["Surgecross Software", <br/>,"Full-stack Software Engineer"]}
+                        description={[
+                            <p className='text-lg'>Apr 2022 - Nov 2022</p>,
+                            <p className='my-1'>
+                            Developed a cross-platform mobile application and
+                            accompanying back-end in a small dedicated team.
+                            </p>,
+                            <p className='my-1'>
+                                Utilised BLoC state management to create reusable,
+                                stateful components adhering to design
+                                specification.
+                            </p>,
+                            <p className='my-1'>
+                                Designed and developed robust, scalable
+                                microservices to provide endpoints for the
+                                application.
+                            </p>
+                            
+                        ]}
                         img={SurgecrossIcon}
                         tags={['Flutter', 'Java', 'Kotlin', 'Spring Boot', 'React']}
                     />
@@ -50,10 +67,14 @@ function Home(props) {
                     <ProjectCard
                         title="Lab Monitor"
 
-                        description="As some rooms in UoN's Computer Science department are often booked out for labs, I
+                        description={[
+                            <p>As some rooms in UoN's Computer Science department are often booked out for labs, I
                         wanted a way to plan my day so I could avoid certain rooms at busy times.  To address this, I
                         created a cross platform mobile/web app built in Flutter to display current status of labs in
-                        the Computer Science department at University of Nottingham."
+                        the Computer Science department at University of Nottingham. </p>,
+                        <br/>,
+                        <p>Currently available on <a className= 'text-primary font-semibold' href='https://apps.apple.com/gb/app/lab-monitor/id6443952035'>iOS</a> and <a className='text-primary font-semibold' href='https://play.google.com/store/apps/details?id=com.aidandagnall.lab_monitor'>Android</a>!</p>,
+                        ]}
                         
                         img={LabMonitorIcon}
                         img_styling='rounded-3xl'
