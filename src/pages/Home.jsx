@@ -16,7 +16,10 @@ function Home(props) {
             <div className="flex flex-col relative bg-bg">
                 <div className="relative flex flex-col sm:h-screen h-min">
 
-                    <NavBar/>
+                    {/* <div className='py-4 h-8'>
+                        <NavBar/>
+                    </div> */}
+
                     <Parallax translateY={[-35, 40]} className='z-0 pointer-events-none'>
                         <Hero />
                     </Parallax>
