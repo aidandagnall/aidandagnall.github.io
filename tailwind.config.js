@@ -8,6 +8,45 @@ module.exports = {
   theme: {
     extend: {
       'waves': "url('/src/res/home_bg.svg')",
+      keyframes: {
+        wiggle: {
+          // '0%': { transform: 'rotate(0deg)' },
+          // '10%': { transform: 'rotate(16deg)' },
+          // '30%': { transform: 'rotate(-16deg)' },
+          // '50%': { transform: 'rotate(16deg)' },
+          // '70%': { transform: 'rotate(-16deg)' },
+          // '90%': { transform: 'rotate(16deg)' },
+          // '100%': { transform: 'rotate(0deg)' },
+
+          // '0%': { transform: 'rotate(0deg)' },
+          // '25%': { transform: 'rotate(16deg)' },
+          // '75%': { transform: 'rotate(-16deg)' },
+          // '100%': { transform: 'rotate(0deg)' },
+
+          '0%': { transform: 'rotate(0deg)' },
+          '10%': { transform: 'rotate(14deg)' },  /* The following five values can be played with to make the waving more or less extreme */
+          '20%': { transform: 'rotate(-8deg)' },
+          '30%': { transform: 'rotate(14deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%':{ transform: 'rotate(10deg)' },
+          '60%': { transform: 'rotate(0deg)' },  /* Reset for the last half to pause */
+          '100%': { transform: 'rotate(0deg)' },
+
+        },
+        typing: {
+          'from': { width: '0' },
+          'to' : {width: '100%' }
+        },
+        blink: {
+          '0%': { borderColor: 'transparent' },
+          '50%': { borderColor: "#505f7e" },
+          '100%': { borderColor: 'transparent' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 2000ms ease-in-out 0s',
+        typewriter: 'typing 2s steps(7, jump-none), blink 0.5s step-end infinite',
+      },
     },
     screens: {
       sm: '640px',
@@ -45,9 +84,10 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      primary: '#2A5711',
-      secondary: '#93b739',
-      bg:'#F5F5F5',
+      // primary: '#2A5711',
+      primary: '#212C41',
+      secondary: "#505f7e",
+      bg:'#F5F5F5'
     }),
     columns: {
       auto: 'auto',
@@ -959,6 +999,11 @@ module.exports = {
     'active',
     'disabled',
   ],
+  variants: {
+    extend: {
+      animation: ['hover', 'focus'],
+    },
+  },
   plugins: [
     require('flowbite/plugin')
   ],

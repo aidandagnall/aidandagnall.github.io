@@ -5,7 +5,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <ParallaxProvider>
-      <div className="w-full bg-bg">
+      <div className="w-full ">
           <Home/>
       </div>
     </ParallaxProvider>

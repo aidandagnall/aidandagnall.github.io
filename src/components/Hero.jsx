@@ -1,6 +1,6 @@
 import '../App.css';
 import Socials from "./Socials"
-import profile from "../res/ProfilePicture.JPG"
+import profile from "../res/profile_blue.JPG"
 import HeroTitle from './HeroTitle';
 import HeroSubtitle from './HeroSubtitle';
 function Hero(props) {

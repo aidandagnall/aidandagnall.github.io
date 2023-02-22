@@ -2,33 +2,34 @@ import { Parallax } from 'react-scroll-parallax';
 import '../App.css';
 import Contact from '../components/Contact';
 import Hero from '../components/Hero'
-import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
 import Android from '../res/android-icon.png'
 import SurgecrossIcon from '../res/surgecross.jpg'
 import LabMonitorIcon from '../res/app-logo.png'
 import NottinghamIcon from '../res/nottingham_cropped.png'
 import AoC from '../res/aoc.png'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 
 function Home(props) {
     return (
-        <div className='relative bg-bg overscroll-none'>
-            <div className="flex flex-col relative bg-bg">
+        <div className='relative overscroll-none'>
+            <div className="flex flex-col relative ">
                 <div className="relative flex flex-col sm:h-screen h-min">
-
-                    {/* <div className='py-4 h-8'>
-                        <NavBar/>
-                    </div> */}
-
                     <Parallax translateY={[-35, 40]} className='z-0 pointer-events-none'>
                         <Hero />
                     </Parallax>
                     <div className='home-wave-spacer home-wave z-30 sm:absolute sm:inset-x-0  sm:bottom-0 sm:mb-0 pointer-events-none'/>
                 </div>
 
-            <div className='bg-local bg-gradient-to-b from-primary to-[#82ac2c] z-50'>
-                <div id="work" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 lg:mx-auto'>
-                    <p className='text-3xl text-bg mx-auto -mb-4'>Work</p>
+            <div className='z-50 bg-primary pb-0 min-h-screen'>
+                <div id="work" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 mx-auto'>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+                        <p className='text-3xl text-bg mx-auto -mb-4 text-center'>Experience</p>
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
                     <ProjectCard
                         title={["Surgecross Software", <br/>,"Full-stack Software Engineer"]}
                         description={[
@@ -52,9 +53,17 @@ function Home(props) {
                         img={SurgecrossIcon}
                         tags={['Flutter', 'Java', 'Kotlin', 'Spring Boot', 'React']}
                     />
+
+                    </AnimationOnScroll>
                 </div>
                 <div id="education" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 lg:mx-auto'>
-                    <p className='text-3xl text-bg mx-auto -mb-4'>Education</p>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+                        <p className='text-3xl text-bg mx-auto -mb-4 text-center'>Education</p>
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <ProjectCard
                         title={[<span className='nowrap'>MSci Computer Science</span>, " at the ", <span className='nowrap'>University of Nottingham</span>]}
                         description={[
@@ -64,9 +73,16 @@ function Home(props) {
                             ]}
                         img={NottinghamIcon}
                     />
+                    </AnimationOnScroll>
                 </div>
                 <div id="projects" className='flex flex-col pt-16 3xl:w-1/2 xl:w-2/3 lg:w-5/6 lg:mx-auto'>
-                    <p className='text-3xl text-bg mx-auto -mb-4'>Projects</p>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+                        <p className='text-3xl text-bg mx-auto -mb-4 text-center'>Projects</p>
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <ProjectCard
                         title="Lab Monitor"
 
@@ -76,7 +92,7 @@ function Home(props) {
                         created a cross platform mobile/web app built in Flutter to display current status of labs in
                         the Computer Science department at University of Nottingham. </p>,
                         <br/>,
-                        <p>Currently available on <a className= 'text-primary font-semibold' href='https://apps.apple.com/gb/app/lab-monitor/id6443952035'>iOS</a> and <a className='text-primary font-semibold' href='https://play.google.com/store/apps/details?id=com.aidandagnall.lab_monitor'>Android</a>!</p>,
+                        <p>Currently available on <a className= 'text-secondary font-bold' href='https://apps.apple.com/gb/app/lab-monitor/id6443952035'>iOS</a> and <a className='text-secondary font-bold' href='https://play.google.com/store/apps/details?id=com.aidandagnall.lab_monitor'>Android</a>!</p>,
                         ]}
                         
                         img={LabMonitorIcon}
@@ -84,6 +100,11 @@ function Home(props) {
                         link='https://github.com/aidandagnall/lab_monitor_client'
                         tags={['Flutter', 'Kotlin', 'Ktor', 'JWT', 'Exposed', 'MySQL', 'MongoDB']}
                     />
+
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <ProjectCard
                         title='Android Fitness Tracker'
                         description="A native android app developed in Kotlin to track a user's runs, walks and bike rides.
@@ -93,6 +114,10 @@ function Home(props) {
                         img_styling='object-scale-down'
                         tags={['Kotlin', 'Android', 'Google Maps API', 'Rooms' ]}
                     />
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <ProjectCard
                         title='eCommerce Site with Packt'
                         description="With a team of other students, we developed a site for Packt's industry partners to easily browse their catalogue and make orders.
@@ -101,6 +126,10 @@ function Home(props) {
                         img_styling='rounded-none'
                         tags={['Laravel', 'Postgres', 'JWT', 'Docker', 'TailwindCSS']}
                     />
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <ProjectCard
                         title='Advent of Code'
                         description='As a big fan of programming challenges, December is an exciting time of year. Advent
@@ -111,9 +140,14 @@ function Home(props) {
                         link='https://github.com/aidandagnall/advent'
                         tags={['C', 'Python', 'Kotlin']}
                     />
+
+                    </AnimationOnScroll>
                 </div>
 
-                <Contact/>
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
+                        <Contact/>
+                    </AnimationOnScroll>
             </div>
             </div>
         </div>

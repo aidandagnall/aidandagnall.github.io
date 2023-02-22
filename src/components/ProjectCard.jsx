@@ -25,7 +25,7 @@ function ProjectCard(props) {
 
 function ProjectTags(props) {
     if (props.tags) {
-        return <div className="flex flex-row flex-wrap mt-1 justify-center sm:justify-start">
+        return <div className="flex flex-row flex-wrap mt-1 justify-center sm:justify-start cursor-default">
             {props.tags.map((tag) =>
                 <div class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full mx-1 my-2">
                     <p>
