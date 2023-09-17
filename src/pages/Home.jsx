@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import ProjectCard from '../components/ProjectCard';
 import Android from '../res/android-icon.png'
 import SurgecrossIcon from '../res/surgecross.jpg'
+import WiseIcon from '../res/wise.jpg'
 import LabMonitorIcon from '../res/app-logo.png'
 import NottinghamIcon from '../res/nottingham_cropped.png'
 import AoC from '../res/aoc.png'
@@ -31,12 +32,26 @@ function Home(props) {
 
                     <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
                     <ProjectCard
+                        title={['Wise', <br/>,'Graduate Software Engineer']}
+                        img={WiseIcon}
+                        description={[
+                            <p className='text-lg'>Sep 2023 - Present</p>,
+                            <p className='my-4'>
+                                <span className='italic'>Coming Soon...</span>
+                            </p>,
+                        ]}
+                        tags={['TypeScript', 'React']}
+                    />
+                    </AnimationOnScroll>
+
+                    <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+                    <ProjectCard
                         title={["Surgecross Software", <br/>,"Full-stack Software Engineer"]}
                         description={[
                             <p className='text-lg'>Apr 2022 - Nov 2022</p>,
                             <p className='my-1'>
-                            Developed a cross-platform mobile application and
-                            accompanying back-end in a small dedicated team.
+                                Developed a cross-platform mobile application and
+                                accompanying back-end in a small dedicated team.
                             </p>,
                             <p className='my-1'>
                                 Utilised BLoC state management to create reusable,
