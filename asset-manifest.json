@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a73b49eb.css",
-    "main.js": "/static/js/main.bbf59b91.js",
+    "main.css": "/static/css/main.f8578a13.css",
+    "main.js": "/static/js/main.81163f4a.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/profile_blue.JPG": "/static/media/profile_blue.36d4cd354d2cfe463a29.JPG",
     "static/media/app-logo.png": "/static/media/app-logo.b346633105bd164b887e.png",
     "static/media/aoc.png": "/static/media/aoc.24a88b1df1b560890f73.png",
+    "static/media/wise.jpg": "/static/media/wise.a629106d203897fca197.jpg",
     "static/media/nottingham_cropped.png": "/static/media/nottingham_cropped.97eb62afa49f995bf1f9.png",
     "static/media/home_bg.svg": "/static/media/home_bg.c6f7946f15183c1d5a54.svg",
     "index.html": "/index.html",
-    "main.a73b49eb.css.map": "/static/css/main.a73b49eb.css.map",
-    "main.bbf59b91.js.map": "/static/js/main.bbf59b91.js.map",
+    "main.f8578a13.css.map": "/static/css/main.f8578a13.css.map",
+    "main.81163f4a.js.map": "/static/js/main.81163f4a.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a73b49eb.css",
-    "static/js/main.bbf59b91.js"
+    "static/css/main.f8578a13.css",
+    "static/js/main.81163f4a.js"
   ]
 }
