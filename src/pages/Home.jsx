@@ -32,12 +32,13 @@ function Home(props) {
 
                     <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
                     <ProjectCard
-                        title={['Wise', <br/>,'Graduate Software Engineer']}
+                        title="Wise"
+                        subtitle="Software Engineer"
                         img={WiseIcon}
                         description={[
                             <p className='text-lg'>Sep 2023 - Present</p>,
                             <p className='my-4'>
-                                <span className='italic'>Coming Soon...</span>
+                              Currently working as a Web engineer, developing our cross-platform UI solution Dynamic Flow.
                             </p>,
                         ]}
                         tags={['TypeScript', 'React']}
@@ -46,7 +47,8 @@ function Home(props) {
 
                     <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
                     <ProjectCard
-                        title={["Surgecross Software", <br/>,"Full-stack Software Engineer"]}
+                        title={"Surgecross Software"}
+                        subtitle={"Full-stack Software Engineer"}
                         description={[
                             <p className='text-lg'>Apr 2022 - Nov 2022</p>,
                             <p className='my-1'>

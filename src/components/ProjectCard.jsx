@@ -4,9 +4,10 @@ function ProjectCard(props) {
             <div className="flex flex-col justify-center">
 
                 <div className="flex sm:flex-row flex-col sm:justify-between justify-center sm:space-x-8 w-full">
-                    <div className="flex flex-col space-y-4 my-auto">
-                        <p className="text-xl sm:text-left text-center">{props.title}</p>
-                        <p className="text-sm sm:text-left text-center">{props.description}</p>
+                    <div className="flex flex-col space-y-2 my-auto mb-2">
+                        <p className="text-xl sm:text-left text-center font-bold text-secondary">{props.title}</p>
+                        <p className="text-xl sm:text-left text-center">{props.subtitle}</p>
+                        <p className="text-sm sm:text-left text-center font-normal">{props.description}</p>
                     </div>
                     <div className="flex shrink-0 my-auto justify-center sm:order-last order-first">
                         <img
@@ -27,7 +28,7 @@ function ProjectTags(props) {
     if (props.tags) {
         return <div className="flex flex-row flex-wrap mt-1 justify-center sm:justify-start cursor-default">
             {props.tags.map((tag) =>
-                <div class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full mx-1 my-2">
+                <div class="px-4 py-2 bg-gray-200 text-gray-800 text-sm font-medium rounded-full mx-1 my-2">
                     <p>
                         {tag}
                     </p>
